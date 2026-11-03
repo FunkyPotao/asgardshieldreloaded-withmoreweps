@@ -423,6 +423,10 @@ public class EventHandler
                         case AsgardShieldReloaded.NAMESPACE + "ender_giant_sword":
                             player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ENDERDRAGON_HURT, SoundCategory.PLAYERS, 0.8F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             break;
+                            //new addition
+                        case AsgardShieldReloaded.NAMESPACE + "copper_giant_sword":
+                            player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.BLOCK_ANVIL_LAND, SoundCategory.PLAYERS, 0.8F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
+                        break;
                     }
                     stack.damageItem((int) damage, player);
                     if (enemy instanceof EntityLivingBase && projectile == enemy) ((EntityLivingBase) enemy).knockBack(player, 0.5F, player.posX - enemy.posX, player.posZ - enemy.posZ);

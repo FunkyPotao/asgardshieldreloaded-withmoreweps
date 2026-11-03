@@ -18,6 +18,7 @@ public class ModItems
 {
     public static final List<Item> ITEMS = new ArrayList<>();
 
+
     public static final Item.ToolMaterial MATERIAL_NEWWOOD = EnumHelper.addToolMaterial("material_newwood", 0, ASRConfig.SWORDS.WOODEN_GIANT_SWORD_DURABILITY, 2.0F, (float) ASRConfig.SWORDS.WOODEN_GIANT_SWORD_DAMAGE - 4, 15).setRepairItem(new ItemStack(Item.getItemFromBlock(Blocks.PLANKS)));
     public static final Item.ToolMaterial MATERIAL_NEWSTONE = EnumHelper.addToolMaterial("material_newstone", 1, ASRConfig.SWORDS.STONE_GIANT_SWORD_DURABILITY, 4.0F, (float) ASRConfig.SWORDS.STONE_GIANT_SWORD_DAMAGE - 4, 5).setRepairItem(new ItemStack(Item.getItemFromBlock(Blocks.COBBLESTONE)));
     public static final Item.ToolMaterial MATERIAL_NEWIRON = EnumHelper.addToolMaterial("material_newiron", 2, ASRConfig.SWORDS.IRON_GIANT_SWORD_DURABILITY, 6.0F, (float) ASRConfig.SWORDS.IRON_GIANT_SWORD_DAMAGE - 4, 14).setRepairItem(new ItemStack(Items.IRON_INGOT));
@@ -28,6 +29,10 @@ public class ModItems
     public static final Item.ToolMaterial MATERIAL_SKULL = EnumHelper.addToolMaterial("material_skull", 1, ASRConfig.SWORDS.SKULL_GIANT_SWORD_DURABILITY, 4.0F, (float) ASRConfig.SWORDS.SKULL_GIANT_SWORD_DAMAGE - 4, 5).setRepairItem(new ItemStack(Items.BONE));
     public static final Item.ToolMaterial MATERIAL_ENDER = EnumHelper.addToolMaterial("material_ender", 3, ASRConfig.SWORDS.ENDER_GIANT_SWORD_DURABILITY, 8.0F, (float) ASRConfig.SWORDS.ENDER_GIANT_SWORD_DAMAGE - 4, 10).setRepairItem(new ItemStack(Item.getItemFromBlock(Blocks.OBSIDIAN)));
 
+    //new addition
+    //TODO: USE OREDICT COPPER
+    public static final Item.ToolMaterial MATERIAL_NEWCOPPER = EnumHelper.addToolMaterial("material_newcopper", 1, ASRConfig.SWORDS.COPPER_GIANT_SWORD_DURABILITY, 4.0F, (float) ASRConfig.SWORDS.COPPER_GIANT_SWORD_DAMAGE - 4, 5).setRepairItem(new ItemStack(Items.EMERALD));
+
     public static final ItemSword WOODEN_GIANT_SWORD = new ItemGiantSword("wooden_giant_sword", MATERIAL_NEWWOOD, ASRConfig.SWORDS.WOODEN_GIANT_SWORD_MAXUSEDURATION);
     public static final ItemSword STONE_GIANT_SWORD = new ItemGiantSword("stone_giant_sword", MATERIAL_NEWSTONE, ASRConfig.SWORDS.STONE_GIANT_SWORD_MAXUSEDURATION);
     public static final ItemSword IRON_GIANT_SWORD = new ItemGiantSword("iron_giant_sword", MATERIAL_NEWIRON, ASRConfig.SWORDS.IRON_GIANT_SWORD_MAXUSEDURATION);
@@ -37,6 +42,11 @@ public class ModItems
     public static final ItemSword PATCHWORK_GIANT_SWORD = new ItemGiantSword("patchwork_giant_sword", MATERIAL_PATCHWORK, ASRConfig.SWORDS.PATCHWORK_GIANT_SWORD_MAXUSEDURATION);
     public static final ItemSword SKULL_GIANT_SWORD = new ItemGiantSword("skull_giant_sword", MATERIAL_SKULL, ASRConfig.SWORDS.SKULL_GIANT_SWORD_MAXUSEDURATION);
     public static final ItemSword ENDER_GIANT_SWORD = new ItemGiantSword("ender_giant_sword", MATERIAL_ENDER, ASRConfig.SWORDS.ENDER_GIANT_SWORD_MAXUSEDURATION);
+
+    //new additions
+    public static final ItemSword COPPER_GIANT_SWORD = new ItemGiantSword("copper_giant_sword", MATERIAL_NEWCOPPER, ASRConfig.SWORDS.COPPER_GIANT_SWORD_MAXUSEDURATION);
+
+
 
     public static final ItemAsgardShield WOODEN_SHIELD = new ItemAsgardShield("wooden_shield", MATERIAL_NEWWOOD, ASRConfig.SHIELDS.WOODEN_SHIELD_DURABILITY, ASRConfig.SHIELDS.WOODEN_SHIELD_MAXUSEDURATION, 10454093);
     public static final ItemAsgardShield GILDED_WOODEN_SHIELD = new ItemAsgardShield("gilded_wooden_shield", MATERIAL_NEWWOOD, ASRConfig.SHIELDS.GILDED_WOODEN_SHIELD_DURABILITY, ASRConfig.SHIELDS.GILDED_WOODEN_SHIELD_MAXUSEDURATION, 10454093);

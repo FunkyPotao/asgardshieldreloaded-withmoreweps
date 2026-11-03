@@ -44,6 +44,9 @@ item.asr.stone_giant_sword.name=Stone Giant Sword
 item.asr.wooden_giant_sword.name=Wooden Giant Sword
 item.asr.biomass_giant_sword.name=Biomass Giant Sword
 item.asr.livingmetal_giant_sword.name=Livingmetal Giant Sword
+# NEW SWORDS
+item.asr.copper_giant_sword.name=Copper Giant Sword
+
 
 # TOOLTIPS
 item.asr.diamond_shield.perk=Special Perk: Reflect

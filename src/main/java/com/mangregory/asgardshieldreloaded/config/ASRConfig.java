@@ -36,6 +36,15 @@ public class ASRConfig
         @Config.Name("Stone Giant Sword: Max Use Duration")
         public int STONE_GIANT_SWORD_MAXUSEDURATION = 100;
 
+        @Config.Name("Copper Giant Sword: Max Use Duration")
+        public int COPPER_GIANT_SWORD_MAXUSEDURATION = 250;
+
+        @Config.Name("Copper Giant Sword: Durability")
+        public int COPPER_GIANT_SWORD_DURABILITY = 315;
+
+        @Config.Name("Copper Giant Sword: Damage")
+        public double COPPER_GIANT_SWORD_DAMAGE = 6.5D;
+
         @Config.Name("Iron Giant Sword: Durability")
         public int IRON_GIANT_SWORD_DURABILITY = 475;
 
